@@ -19,11 +19,11 @@ with open("config.json") as fp:
 
 
 
-with open("/Users/sushilkumarbarai/workspace/audio_streaming/.creds/azure_asr.json") as fp:
+with open("/Users/sushilkumarbarai/audio_streaming/.creds/azure_asr.json") as fp:
     credit = json.load(fp)
 
 
-with open("/Users/sushilkumarbarai/workspace/audio_streaming/.creds/oztts.json") as fp:
+with open("/Users/sushilkumarbarai/audio_streaming/.creds/sushtts.json") as fp:
     oztts = json.load(fp)
 
 subscription_key=credit['subscription_key']
@@ -86,9 +86,6 @@ class OpenAIChatInterpreter:
 
 
 
-
-   
-
     def text_to_text_request(self, user_message=None):
         url=openapiurl
         api_key=bear_token
@@ -150,7 +147,6 @@ class OpenAIChatInterpreter:
 
 
     def process(self,audio_file_path=None):
-      #  audio_file_path='/home/ozoneai/workspace/sushil/voicebot_setup/utils/audio2.wav'
         audio_file_path=audio_file_path
         recog_text=self.recognize(audio_file_path=audio_file_path)
         response = self.text_to_text_request(user_message=recog_text)
@@ -158,17 +154,9 @@ class OpenAIChatInterpreter:
         print(f"TTS ::: {tts}")
         return tts,chat_gpt_response
     
-    def play_audio(self):
-        pass
 
-# Example usage
-# api = OpenAIChatInterpreter()
-# audio_file_path='/home/ozoneai/workspace/sushil/voicebot_setup/utils/audio2.wav'
-# recog_text=api.recognize(audio_file_path=audio_file_path)
-# response = api.text_to_text_request(user_message=recog_text)
-# api.text_to_speech(chat_gpt_response=response)
-# api = OpenAIChatInterpreter()
-# api.process()
+
+
 
 
 
