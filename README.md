@@ -29,6 +29,8 @@ To run this app locally, make sure you have the required libraries installed:
 
 ```bash
 pip install streamlit speech_recognition pydub gtts azure-cognitiveservices-speech
+```
 
-``bash
+```bash
 streamlit run application.py
+```
