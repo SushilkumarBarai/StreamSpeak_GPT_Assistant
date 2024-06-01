@@ -11,9 +11,12 @@ Hi there! I'm here to make your life easier – what can I assist you with?
 
 - Voice recognition: Utilizes the `speech_recognition` library to recognize speech input from the user through the microphone.
 - Text-to-speech conversion: Converts user input and AI-generated responses into audio using the `gTTS` library.
-- ChatGPT integration: Interacts with the OpenAI ChatInterpreter for generating responses based on user queries.
 - Interactive UI: Displays user input and AI responses in a visually appealing interface using Streamlit.
 - Sidebar customization: Allows users to see the introduction and status updates in the sidebar.
+- Azure Speech Services: Utilizes Azure Speech Services for accurate speech recognition.
+- OpenAI GPT-3.5 integration: Interprets user input and generates responses using OpenAI's powerful GPT-3.5 model.
+- Text-to-speech conversion: Converts the AI-generated responses into audio for playback to the user.
+
 
 ## Usage
 
@@ -22,6 +25,9 @@ Hi there! I'm here to make your life easier – what can I assist you with?
 3. Wait for the virtual assistant to process the input and generate a response.
 4. Listen to the response through audio playback.
 5. Continue the conversation as needed.
+6. Set up Azure Speech Services, OpenAI API, and obtain the necessary credentials.
+7. Update the configuration files (`config.json`, `azure_asr.json`, `oztts.json`) with the required credentials and endpoints.
+
 
 ## Installation
 
