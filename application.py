@@ -75,7 +75,7 @@ if __name__ == "__main__":
     status_placeholder = st.sidebar.empty()
     
     # Adding an image in the sidebar
-    st.sidebar.image("/Users/sushilkumarbarai/workspace/audio_streaming/utils/assitant.png", use_column_width=True)  # Replace with your image path
+    st.sidebar.image("/Users/sushilkumarbarai/audio_streaming/assitant.png", use_column_width=True)  # Replace with your image path
     
     # Injecting JavaScript for auto-scrolling
     auto_scroll_js = """
